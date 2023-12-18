@@ -49,8 +49,8 @@ public class Exercise {
     public String getMuscleGroup() {return muscle_group;}
     public String getBodyPart() {return body_part;}
     public String getExerciseDirection() {return exercise_direction;}
-    public String getEquipment() { return exercise_equipment; }
-    public String getDifficulty() { return exercise_difficulty; }
+    public String getExerciseEquipment() { return exercise_equipment; }
+    public String getExerciseDifficulty() { return exercise_difficulty; }
 
     public int getRepetitions() { return repetitions; }
     public int getSets() { return sets; }

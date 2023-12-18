@@ -26,8 +26,11 @@ public class Workout {
     private static String[] DirectionOfExercise = {"Push", "Pull", "Static", "Multi"};
     private static String[] WorkoutDifficulties = {"Build-up", "Deload", "Maintain", "Peak"};
 
-    public Workout() {}
+    public Workout() {
+        loadExercises();
+    }
 
+    // TODO Generate workouts if empty
     public List<Exercise> getGeneratedExercises() {
         return generated_exercises;
     }
@@ -80,13 +83,13 @@ public class Workout {
         int reps;
         boolean is_timed = (e.getExerciseDirection().equals("Timed"));
 
-        reps = switch (e.getEquipment()) {
-            case "Barbell" -> calculateIntermediateReps(5, 10, e.getDifficulty());
-            case "Dumbbell" -> is_timed ? calculateIntermediateReps(5, 10, e.getDifficulty()) : calculateIntermediateReps(10, 15, e.getDifficulty());
-            case "Cable" -> calculateIntermediateReps(10, 15, e.getDifficulty());
-            case "Bodyweight" -> is_timed ? calculateIntermediateReps(30, 60, e.getDifficulty()) : calculateIntermediateReps(10, 20, e.getDifficulty());
-            case "Banded" -> calculateIntermediateReps(15, 20, e.getDifficulty());
-            default -> calculateIntermediateReps(10, 20, e.getDifficulty());
+        reps = switch (e.getExerciseEquipment()) {
+            case "Barbell" -> calculateIntermediateReps(5, 10, e.getExerciseDifficulty());
+            case "Dumbbell" -> is_timed ? calculateIntermediateReps(5, 10, e.getExerciseDifficulty()) : calculateIntermediateReps(10, 15, e.getExerciseDifficulty());
+            case "Cable" -> calculateIntermediateReps(10, 15, e.getExerciseDifficulty());
+            case "Bodyweight" -> is_timed ? calculateIntermediateReps(30, 60, e.getExerciseDifficulty()) : calculateIntermediateReps(10, 20, e.getExerciseDifficulty());
+            case "Banded" -> calculateIntermediateReps(15, 20, e.getExerciseDifficulty());
+            default -> calculateIntermediateReps(10, 20, e.getExerciseDifficulty());
         };
 
         e.setRepetitions(reps);
@@ -102,7 +105,8 @@ public class Workout {
     }
 
 
-    public void generateSets(Exercise e, String workoutDifficulty) {
+    public void generateSets(Exercise e, String inputString) {
+        String workoutDifficulty = inputString.substring(inputString.indexOf('-') + 1);
         int sets = switch (workoutDifficulty) {
             case "Build-up" -> 3;
             case "Peak" -> 4;
@@ -112,10 +116,10 @@ public class Workout {
         };
 
         // TODO make sure this is always at least 1
-        if (e.getDifficulty().equals("Beginner")) {
+        if (e.getExerciseDifficulty().equals("Beginner")) {
             sets += 1;
-        } else if (e.getDifficulty().equals("Advanced")) {
-            sets -= 1;
+        } else if (e.getExerciseDifficulty().equals("Advanced")) {
+            sets = (sets > 1) ? (sets - 1) : 1;
         }
         e.setSets(sets);
     }

@@ -99,9 +99,9 @@ public class GymnasticsGains extends Application{
         System.out.println();
         //app.gymnastgainz.ExerciseManager.displayAllExercisesInfo();
 
-        Workout TestWorkout = new Workout();
-        TestWorkout.loadExercises();
+        //Workout TestWorkout = new Workout();
+        //TestWorkout.loadExercises();
 
-        TestWorkout.generateWorkout("Build-up");
+        //TestWorkout.generateWorkout("Build-up");
     }
 }
