@@ -6,6 +6,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 
 public class HelloApplication extends Application {
     @Override
@@ -13,10 +17,8 @@ public class HelloApplication extends Application {
         try {
             // Load the FXML file
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("GainsGui.fxml"));
-            //Parent root = FXMLLoader.load(getClass().getResource("/path/to/your/fxmlfile.fxml")); // Update the path to your FXML file
             Scene scene = new Scene(fxmlLoader.load());
             // Set the scene and show the stage
-            //primaryStage.setScene(new Scene(fxmlLoader));
             stage.setTitle("Gymnast Gainz Application"); // Set the title of the window
             stage.setScene(scene);
             stage.show();
