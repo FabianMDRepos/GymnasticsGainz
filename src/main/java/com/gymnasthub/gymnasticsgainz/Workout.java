@@ -41,7 +41,7 @@ public class Workout {
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(csvSplitBy);
 
-                exercise_manager.addExercise(new Exercise(data[0], data[1], data[2], data[3], data[4], data[5]));
+                exercise_manager.addExercise(new Exercise(data[0], data[1], data[2], data[3], data[4], data[5],data[6]));
             }
         } catch (IOException e) {
             e.printStackTrace();
