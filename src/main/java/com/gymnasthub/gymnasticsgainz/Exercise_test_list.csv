@@ -1,50 +1,50 @@
-Exercises_Name,Muscle_Group,Body_Part,Exercise_Direction,Equipment,Difficulty
-Rickshaw Carry,Upper Body,Forearms,Push,Other,Intermediate
-Single-Leg Press,Lower Body,Quadriceps,Push,Machine,Beginner
-Landmine twist,Core,Abdominals,Push,Other,Intermediate
-Weighted pull-up,Upper Body,Lats,Pull,Other,Advanced
-T-Bar Row with Handle,Upper Body,Middle Back,Pull,Other,Intermediate
-Palms-down wrist curl over bench,Upper Body,Forearms,Push,Barbell,Beginner
-Atlas Stones,Core,Abdominals,Pull,Other,Advanced
-Dumbbell front raise to lateral raise,Upper Body,Shoulders,Push,Dumbbell,Intermediate
-Clean from Blocks,Lower Body,Quadriceps,Pull,Barbell,Intermediate
-Incline Hammer Curls,Upper Body,Biceps,Push,Dumbbell,Intermediate
-Straight-bar wrist roll-up,Upper Body,Forearms,Push,Barbell,Beginner
-Barbell glute bridge,Lower Body,Glutes,Push,Barbell,Intermediate
-Clean and press,Upper Body,Shoulders,Push,Barbell,Intermediate
-Triceps dip,Upper Body,Triceps,Push,Bodyweight ,Beginner
-Dumbbell farmer's walk,Upper Body,Forearms,Push,Other,Intermediate
-Palms-up wrist curl over bench,Upper Body,Forearms,Push,Barbell,Beginner
-Barbell Full Squat,Lower Body,Quadriceps,Push,Barbell,Intermediate
-Barbell deficit deadlift,Lower Body,Abdominals,Pull,Barbell,Advanced
-Barbell Deadlift,Lower Body,Hamstrings,Pull,Barbell,Advanced
-Single-arm palm-in dumbbell shoulder press,Upper Body,Shoulders,Push,Dumbbell,Intermediate
-Romanian Deadlift With Dumbbells,Lower Body,Hamstrings,Pull,Dumbbell,Intermediate
-Tire flip,Lower Body,Quadriceps,Push,Other,Advanced
-Clean Deadlift,Lower Body,Hamstrings,Pull,Barbell,Advanced
-Elbow plank,Core,Abdominals,Timed,Bodyweight ,Beginner
-Bottoms Up,Core,Abdominals,Timed,Bodyweight ,Intermediate
-Barbell back squat to box,Lower Body,Quadriceps,Push,Barbell,Intermediate
-Clean and jerk,Upper Body,Shoulders,Push,Barbell,Advanced
-Single-arm kettlebell push-press,Upper Body,Shoulders,Push,Kettlebells,Intermediate
-Push-press,Lower Body,Quadriceps,Push,Barbell,Intermediate
-Suspended ab fall-out,Core,Abdominals,Timed,Other,Advanced
-Military press,Upper Body,Shoulders,Push,Barbell,Intermediate
-Power snatch,Lower Body,Quadriceps,Push,Barbell,Advanced
-Sumo deadlift,Lower Body,Hamstrings,Pull,Barbell,Advanced
-Hang Clean,Lower Body,Quadriceps,Push,Barbell,Advanced
-Dumbbell V-Sit Cross Jab,Core,Abdominals,Push,Dumbbell,Intermediate
-Reverse Band Box Squat,Lower Body,Quadriceps,Push,Bands,Intermediate
-Standing palms-in shoulder press,Upper Body,Shoulders,Push,Dumbbell,Intermediate
-Standing cable low-to-high twist,Core,Abdominals,Push,Cable,Intermediate
-Decline skullcrusher,Upper Body,Triceps,Push,Dumbbell,Intermediate
-Standing behind-the-back wrist curl,Upper Body,Forearms,Push,Barbell,Beginner
-Seated finger curl,Upper Body,Forearms,Push,Barbell,Beginner
-Wide-grip barbell curl,Upper Body,Biceps,Pull,Barbell,Intermediate
-Dumbbell spell caster,Core,Abdominals,Push,Dumbbell,Intermediate
-Dumbbell floor press,Upper Body,Triceps,Push,Dumbbell,Intermediate
-Lying Face Down Plate Neck Resistance,Upper Body,Neck,Timed,Other,Intermediate
-Pullups,Upper Body,Lats,Pull,Bodyweight ,Intermediate
-Decline reverse crunch,Core,Abdominals,Pull,Other,Intermediate
-Dumbbell Bench Press,Upper Body,Chest,Push,Dumbbell,Intermediate
-Jumping rope,Lower Body,Quadriceps,Push,Bodyweight ,Beginner
+Exercises_Name,Muscle_Group,Body_Part,Exercise_Direction,Equipment,Difficulty,Description
+Rickshaw Carry,Upper Body,Forearms,Push,Other,Intermediate,"    ""Holding a rickshaw-style weight carrier with both hands walk a certain distance while maintaining an upright posture. Targets the forearms and upper body."""
+Single-Leg Press,Lower Body,Quadriceps,Push,Machine,Beginner,"    ""Using a leg press machine push the weight plate with one leg at a time. Isolates the quadriceps in the lower body and enhances balance."""
+Landmine twist,Core,Abdominals,Push,Other,Intermediate,"    ""Holding the end of a barbell anchored in a landmine attachment twist your torso from side to side. Engages the abdominals and core."""
+Weighted pull-up,Upper Body,Lats,Pull,Other,Advanced,"    ""Perform pull-ups with additional weight attached to your body. Advanced exercise targeting the lats and upper body."""
+T-Bar Row with Handle,Upper Body,Middle Back,Pull,Other,Intermediate,"    ""With a T-bar row machine or a barbell in a corner lift the bar using a T-bar handle. Targets the middle back and upper body."""
+Palms-down wrist curl over bench,Upper Body,Forearms,Push,Barbell,Beginner,"    ""While performing chin-ups maintain your legs in an L-shape. Targets the biceps lats and abs."""
+Atlas Stones,Core,Abdominals,Pull,Other,Advanced,"    ""Using a barbell in a landmine attachment press the barbell overhead with one arm. Targets the shoulders and triceps."""
+Dumbbell front raise to lateral raise,Upper Body,Shoulders,Push,Dumbbell,Intermediate,"    ""Sit on a rowing machine and pull the cable towards your torso. Primarily works the middle back."""
+Clean from Blocks,Lower Body,Quadriceps,Pull,Barbell,Intermediate,"    ""Lying on a decline bench perform crunches twisting to engage the obliques. Targets the abdominal muscles focusing on the sides."""
+Incline Hammer Curls,Upper Body,Biceps,Push,Dumbbell,Intermediate,"    ""Sit on the ground with a barbell over your legs. Lean against a bench then thrust your hips upward. Targets the glutes and hamstrings."""
+Straight-bar wrist roll-up,Upper Body,Forearms,Push,Barbell,Beginner,"    ""Using a cable machine push down the cable with one arm at a time to work the triceps."""
+Barbell glute bridge,Lower Body,Glutes,Push,Barbell,Intermediate,"    ""Lie on a bench and press a barbell up with a grip that's shoulder-width apart. Targets the chest muscles."""
+Clean and press,Upper Body,Shoulders,Push,Barbell,Intermediate,"    ""Using a trap bar perform a deadlift. Easier on the lower back targets the hamstrings glutes and back."""
+Triceps dip,Upper Body,Triceps,Push,Bodyweight ,Beginner,"    ""Lie face down on a T-bar row machine and pull the weight towards your chest. Targets the middle back."""
+Dumbbell farmer's walk,Upper Body,Forearms,Push,Other,Intermediate,"    ""Stand in front of a box or platform and jump onto it with both feet then step back down. Works the legs and improves explosive power."""
+Palms-up wrist curl over bench,Upper Body,Forearms,Push,Barbell,Beginner,"    ""Hold dumbbells in each hand and lift them out to your sides targeting the shoulders."""
+Barbell Full Squat,Lower Body,Quadriceps,Push,Barbell,Intermediate,"    ""Jump rope for a set period or number of jumps. Excellent cardio and lower body workout."""
+Barbell deficit deadlift,Lower Body,Abdominals,Pull,Barbell,Advanced,"    ""Lie on an incline bench and press dumbbells upward. Targets the upper chest."""
+Barbell Deadlift,Lower Body,Hamstrings,Pull,Barbell,Advanced,"    ""Lie on a flat bench with cables in both hands and perform a fly motion to work the chest."""
+Single-arm palm-in dumbbell shoulder press,Upper Body,Shoulders,Push,Dumbbell,Intermediate,"    ""Hold a barbell at your shoulders then dip slightly and explosively press the bar overhead. Works the shoulders and legs."""
+Romanian Deadlift With Dumbbells,Lower Body,Hamstrings,Pull,Dumbbell,Intermediate,"    ""Stand and press a barbell from your shoulders overhead. Targets the shoulders."""
+Tire flip,Lower Body,Quadriceps,Push,Other,Advanced,"    ""Hold dumbbells in front of you and lift them to your chin working the shoulders and upper back."""
+Clean Deadlift,Lower Body,Hamstrings,Pull,Barbell,Advanced,"    ""Lie face down and lift your arms and legs off the ground like Superman flying. Strengthens the lower back."""
+Elbow plank,Core,Abdominals,Timed,Bodyweight ,Beginner,"    ""On a hyperextension bench lift your upper body until it's in line with your lower body. Targets the lower back."""
+Bottoms Up,Core,Abdominals,Timed,Bodyweight ,Intermediate,"    ""Do crunches on a decline bench to increase resistance for your abdominals."""
+Barbell back squat to box,Lower Body,Quadriceps,Push,Barbell,Intermediate,"    ""Bent over or on a machine lift weights out to your sides. Targets the rear shoulders and upper back."""
+Clean and jerk,Upper Body,Shoulders,Push,Barbell,Advanced,"    ""On a lat pulldown machine use a wide grip to pull the bar down towards your chest. Targets the lats and upper back."""
+Single-arm kettlebell push-press,Upper Body,Shoulders,Push,Kettlebells,Intermediate,"    ""Perform squats using a Smith machine for guided motion targeting the legs and glutes."""
+Push-press,Lower Body,Quadriceps,Push,Barbell,Intermediate,"    ""Lie on a flat bench and press dumbbells up working the chest muscles."""
+Suspended ab fall-out,Core,Abdominals,Timed,Other,Advanced,"    ""Lift dumbbells to the side while standing targeting the deltoids and upper body."""
+Military press,Upper Body,Shoulders,Push,Barbell,Intermediate,"    ""Use a rowing machine to work the back muscles mimicking the rowing motion."""
+Power snatch,Lower Body,Quadriceps,Push,Barbell,Advanced,"    ""Perform squats with a barbell targeting the quads hamstrings and glutes."""
+Sumo deadlift,Lower Body,Hamstrings,Pull,Barbell,Advanced,"    ""Perform a deadlift by lifting a barbell from the ground to hip level. Targets the back glutes and hamstrings."""
+Hang Clean,Lower Body,Quadriceps,Push,Barbell,Advanced,"    ""In a seated positio pull a cable towards your face targeting the upper back and shoulders."""
+Dumbbell V-Sit Cross Jab,Core,Abdominals,Push,Dumbbell,Intermediate,"    ""Lie on your back and press a barbell from your chest targeting the pectorals and arms."""
+Reverse Band Box Squat,Lower Body,Quadriceps,Push,Bands,Intermediate,"    ""On a leg press machine press the platform away with your feet. Targets the quads glutes and calves."""
+Standing palms-in shoulder press,Upper Body,Shoulders,Push,Dumbbell,Intermediate,"    ""Perform a rowing motion with a barbell targeting the back and biceps."""
+Standing cable low-to-high twist,Core,Abdominals,Push,Cable,Intermediate,"    ""Lift a barbell overhead from a squat position working the shoulders and legs."""
+Decline skullcrusher,Upper Body,Triceps,Push,Dumbbell,Intermediate,"    ""Lie on a decline bench and perform a pressing motion with a barbell targeting the lower chest."""
+Standing behind-the-back wrist curl,Upper Body,Forearms,Push,Barbell,Beginner,"    ""Perform crunches on a mat targeting the abdominal muscles."""
+Seated finger curl,Upper Body,Forearms,Push,Barbell,Beginner,"    ""Jump onto a box or platform and back down working the legs and cardiovascular system."""
+Wide-grip barbell curl,Upper Body,Biceps,Pull,Barbell,Intermediate,"    ""Perform bicep curls with dumbbells targeting the biceps."""
+Dumbbell spell caster,Core,Abdominals,Push,Dumbbell,Intermediate,"    ""Lift a barbell or dumbbells from the ground to overhead working the entire body."""
+Dumbbell floor press,Upper Body,Triceps,Push,Dumbbell,Intermediate,"    ""Use a cable machine to perform a tricep extension targeting the triceps."""
+Lying Face Down Plate Neck Resistance,Upper Body,Neck,Timed,Other,Intermediate,"    ""Sit on a bench and press dumbbells overhead targeting the shoulders."""
+Pullups,Upper Body,Lats,Pull,Bodyweight ,Intermediate,"    ""Using a leg extension machine extend your legs to work the quadriceps."""
+Decline reverse crunch,Core,Abdominals,Pull,Other,Intermediate,"    ""Perform a rowing motion with dumbbells targeting the back and biceps."""
+Dumbbell Bench Press,Upper Body,Chest,Push,Dumbbell,Intermediate,"    ""Lie on a bench and perform a fly motion with dumbbells targeting the chest."""
+Jumping rope,Lower Body,Quadriceps,Push,Bodyweight ,Beginner,"    ""Using a pec deck machine perform a fly motion to work the chest."""
