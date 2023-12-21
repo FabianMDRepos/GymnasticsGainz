@@ -41,57 +41,5 @@ public class GymnasticsGains extends Application{
         }
         CSVExercises.displayAllExercisesInfo();
 
-
-        ExerciseManager gymnasticsExercises = new ExerciseManager();
-
-        gymnasticsExercises.addExercise(new Exercise("Tire flip", "Lower Body", "Quadriceps", "Push", "Other", "Advanced", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Clean Deadlift", "Lower Body", "Hamstrings", "Pull", "Barbell", "Advanced", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Elbow plank", "Core", "Abdominals", "Static", "Body Only", "Beginner", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Bottoms Up", "Core", "Abdominals", "Static", "Body Only", "Intermediate", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Barbell back squat to box", "Lower Body", "Quadriceps", "Push", "Barbell", "Intermediate", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Clean and jerk", "Upper Body", "Shoulders", "Push", "Barbell", "Advanced", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Single-arm kettlebell push-press", "Upper Body", "Shoulders", "Push", "Kettlebells", "Intermediate", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Push-press", "Lower Body", "Quadriceps", "Push", "Barbell", "Intermediate", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Suspended ab fall-out", "Core", "Abdominals", "Static", "Other", "Advanced", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Military press", "Upper Body", "Shoulders", "Push", "Barbell", "Intermediate", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Power snatch", "Lower Body", "Quadriceps", "Push", "Barbell", "Advanced", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Sumo deadlift", "Lower Body", "Hamstrings", "Pull", "Barbell", "Advanced", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Hang Clean", "Lower Body", "Quadriceps", "Push", "Barbell", "Advanced", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Dumbbell V-Sit Cross Jab", "Core", "Abdominals", "Push", "Dumbbell", "Intermediate", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Reverse Band Box Squat", "Lower Body", "Quadriceps", "Push", "Bands", "Intermediate", "Placeholder"));
-        gymnasticsExercises.addExercise(new Exercise("Standing palms-in shoulder press", "Upper Body", "Shoulders", "Push", "Dumbbell", "Intermediate", "Placeholder"));
-
-
-
-        String search_parameter;
-        // Example usage
-        search_parameter = "Hang Clean";
-        List<Exercise> searchByName = ExerciseManager.getExercisesByName(search_parameter);
-        System.out.println("Search by Name: ("+ search_parameter + ") " + ExerciseManager.extractNames(searchByName));
-
-        search_parameter = "Lower Body";
-        List<Exercise> searchByMuscleRegion = ExerciseManager.getExercisesByMuscleRegion(search_parameter,3);
-        System.out.println("Search by Muscle Region: ("+ search_parameter + ") " + ExerciseManager.extractNames(searchByMuscleRegion));
-
-        search_parameter = "Pull";
-        List<Exercise> searchByDirection = ExerciseManager.getExercisesByDirection(search_parameter,2);
-        System.out.println("Search by Direction: ("+ search_parameter + ") " + ExerciseManager.extractNames(searchByDirection));
-
-        search_parameter = "Push";
-        searchByDirection = ExerciseManager.getExercisesByDirection(search_parameter,2);
-        System.out.println("Search by Direction: ("+ search_parameter + ") " + ExerciseManager.extractNames(searchByDirection));
-
-        search_parameter = "Lower-Push";
-        System.out.println("Search by Muscle Region and Direction: ("+ search_parameter + ") " + ExerciseManager.extractNames(
-                ExerciseManager.getExercisesByDirection("Push",searchByMuscleRegion)));
-
-
-        System.out.println();
-        //app.gymnastgainz.ExerciseManager.displayAllExercisesInfo();
-
-        Workout TestWorkout = new Workout();
-        TestWorkout.loadExercises();
-
-        TestWorkout.generateWorkout("Build-up");
     }
 }

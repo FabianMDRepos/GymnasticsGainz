@@ -14,7 +14,7 @@ public class StageController {
 
         try {
         // Load the FXML file
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("GainsGui.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(GymnasticsGains.class.getResource("GainsGui.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         // Set the scene and show the stage
         stage.setTitle("Gymnast Gainz Application"); // Set the title of the window

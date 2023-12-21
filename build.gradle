@@ -26,7 +26,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.gymnasthub.gymnasticsgainz'
-    mainClass = 'com.gymnasthub.gymnasticsgainz.HelloApplication'
+    mainClass = 'com.gymnasthub.gymnasticsgainz.GymnasticsGains'
 }
 
 javafx {

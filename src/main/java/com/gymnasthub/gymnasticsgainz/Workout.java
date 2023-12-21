@@ -26,7 +26,9 @@ public class Workout {
     private static String[] DirectionOfExercise = {"Push", "Pull", "Static", "Multi"};
     private static String[] WorkoutDifficulties = {"Build-up", "Deload", "Maintain", "Peak"};
 
-    public Workout() {}
+    public Workout() {
+        loadExercises();
+    }
 
     public List<Exercise> getGeneratedExercises() {
         return generated_exercises;
@@ -102,7 +104,8 @@ public class Workout {
     }
 
 
-    public void generateSets(Exercise e, String workoutDifficulty) {
+    public void generateSets(Exercise e, String inputString) {
+        String workoutDifficulty = inputString.substring(inputString.indexOf('-') + 1);
         int sets = switch (workoutDifficulty) {
             case "Build-up" -> 3;
             case "Peak" -> 4;
@@ -112,10 +115,10 @@ public class Workout {
         };
 
         // TODO make sure this is always at least 1
-        if (e.getDifficulty().equals("Beginner")) {
+        if (e.getExerciseDifficulty().equals("Beginner")) {
             sets += 1;
-        } else if (e.getDifficulty().equals("Advanced")) {
-            sets -= 1;
+        } else if (e.getExerciseDifficulty().equals("Advanced")) {
+            sets = (sets > 1) ? (sets - 1) : 1;
         }
         e.setSets(sets);
     }
