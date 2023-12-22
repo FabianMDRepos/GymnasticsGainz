@@ -26,29 +26,13 @@ public class Workout {
     private static String[] DirectionOfExercise = {"Push", "Pull", "Static", "Multi"};
     private static String[] WorkoutDifficulties = {"Build-up", "Deload", "Maintain", "Peak"};
 
-    public Workout() {
-        loadExercises();
+    public Workout() { //TODO add logic so creating a workout object auto generates the workout exercises.
     }
 
     public List<Exercise> getGeneratedExercises() {
         return generated_exercises;
     }
 
-    public void loadExercises() {
-        String csvFile = "src\\main\\java\\com\\gymnasthub\\gymnasticsgainz\\Exercise_test_list.csv"; // Replace with your CSV file's path
-        String line;
-        String csvSplitBy = ","; // Use the appropriate delimiter if different (e.g., "\t" for tab-separated)
-
-        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
-            while ((line = br.readLine()) != null) {
-                String[] data = line.split(csvSplitBy);
-
-                exercise_manager.addExercise(new Exercise(data[0], data[1], data[2], data[3], data[4], data[5],data[6]));
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public void generateWorkout(String workout_difficulty) { // TODO Prevent duplicates.
         List<Exercise> workoutExercises = new ArrayList<>();
@@ -75,7 +59,7 @@ public class Workout {
 
         generated_exercises = workoutExercises;
         // Display workout
-        displayWorkout(workoutExercises);
+        //displayWorkout(workoutExercises);
     }
 
     public void generateRepetitions(Exercise e) {
@@ -130,7 +114,5 @@ public class Workout {
             workout.get(i).displayInLine();
         }
     }
-
-    //public List<String>
 
 }
