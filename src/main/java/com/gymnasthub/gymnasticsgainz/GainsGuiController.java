@@ -20,47 +20,31 @@ public class GainsGuiController {
     public Label difficulty_label;
     @FXML
     private Button generateButton;
-
     @FXML
     private ChoiceBox<String> difficultyChoiceBox;
-
-    @FXML
-    private Label titleLabel;
-
     @FXML
     private TableView<Exercise> exerciseTable;
-
     @FXML
     private TableColumn<Exercise, String> nameColumn;
-
     @FXML
     private TableColumn<Exercise, String> muscleGroupColumn;
-
     @FXML
     private TableColumn<Exercise, String> bodyPartColumn;
-
     @FXML
     private TableColumn<Exercise, String> directionColumn;
-
     @FXML
     private TableColumn<Exercise, String> equipmentColumn;
-
     @FXML
     private TableColumn<Exercise, String> difficultyColumn;
-
     @FXML
     private TableColumn<Exercise, Integer> setsColumn;
-
     @FXML
     private TableColumn<Exercise, Integer> repsColumn;
-
-    private ExerciseManager exerciseManager;
-    private Workout workout;
 
     @FXML
     public void initialize() {
         // Initialize ExerciseManager
-        exerciseManager = new ExerciseManager();
+        ExerciseManager exerciseManager = new ExerciseManager();
 
         // Set up the columns in the table
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("exerciseName"));
@@ -92,7 +76,6 @@ public class GainsGuiController {
             workout.generateWorkout(selectedDifficulty);
             ObservableList<Exercise> generatedExercises = FXCollections.observableArrayList(workout.getGeneratedExercises());
             exerciseTable.setItems(generatedExercises);
-            //difficulty_label.setTextFill(Color.rgb(0,0,0));
         }
     }
 
@@ -115,20 +98,23 @@ public class GainsGuiController {
         });
     }
 
+    public void showDescription(MouseEvent event) {
+        if (event.getClickCount() == 1) { // Check for a single click
+            Exercise selectedExercise = exerciseTable.getSelectionModel().getSelectedItem();
+            if (selectedExercise != null) {
+                // Get the exercise details as a String
+                String exerciseDetails = selectedExercise.toString();
 
-    //description.setOnMouseClicked(new EventHandler<MouseEvent>() {
-        public void showDescription(MouseEvent event) {
-            if (event.getClickCount() == 1) { // Check for a single click
-                Exercise selectedExercise = exerciseTable.getSelectionModel().getSelectedItem();
-                if (selectedExercise != null) {
-                    // Get the exercise details as a String
-                    String exerciseDetails = selectedExercise.toString();
-
-                    // Set the text of the TextArea to the exercise details
-                    description.setText(exerciseDetails);
-                }
+                // Set the text of the TextArea to the exercise details
+                description.setText(exerciseDetails);
             }
         }
-    //});
+    }
+
+    // Getters for testing TODO Consider inheritance to mask
+    public TextArea getDescription() {return description;}
+    public Label getDifficultyLabel() {return difficulty_label;}
+    public TableView<Exercise> getExerciseTable() {return exerciseTable;}
+
 
 }

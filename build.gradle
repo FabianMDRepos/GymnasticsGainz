@@ -49,6 +49,11 @@ dependencies {
     }
     implementation('org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0')
 
+
+    testImplementation("org.testfx:testfx-core:4.0.15-alpha")
+    testImplementation("org.hamcrest:hamcrest-core:2.2")
+    testImplementation("org.testfx:testfx-junit5:4.0.15-alpha")
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
