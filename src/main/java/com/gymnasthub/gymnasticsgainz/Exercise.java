@@ -5,13 +5,15 @@ public class Exercise {
 
 
     // Set by constructor /////////////////////
-    public Exercise(String name, String group, String part, String direction,String equipment,String difficulty) { //TODO Modify naming conventions
+    public Exercise(String name, String group, String part, String direction,String equipment,
+                    String difficulty, String description) { //TODO Modify naming conventions
         exercise_name = name;
         muscle_group = group;
         body_part = part;
         exercise_direction = direction;
         exercise_equipment = equipment;
         exercise_difficulty = difficulty;
+        exercise_description = description;
     }
     private final String exercise_name;
     private final String muscle_group;
@@ -19,6 +21,7 @@ public class Exercise {
     private final String exercise_direction;
     private final String exercise_equipment;
     private final String exercise_difficulty;
+    private final String exercise_description;
     ////////////////////////////////////////////
 
 
@@ -26,16 +29,6 @@ public class Exercise {
     private int repetitions;
     private int sets;
     /////////////////////////////////////////
-
-
-    // Static Variables  /////////////////////////// TODO likely deleted once data set is used as default, could remain for error checking.
-    private static String[] DirectionOfExercise = {"Push", "Pull", "Timed", "Multi"}; // TODO Delete "Multi"?
-    private static String[] Equipment = {"BodyWeight", "Dumbbell", "Machine", "Cable", "Barbell", "Other"};
-    private static String[] MuscleRegions = {"Upper Body", "Lower Body", "Core"};
-    private static String[] MuscleGroups = {"Abs", "Back-Lower", "Back-Upper", "Biceps", "Calves", "Chest", "Forearms",
-            "Glutes", "Hamstrings", "Hips", "Lats", "Shoulders", "Triceps", "Quads","Multiple"};
-    ////////////////////////////////////////////////
-
 
 
     // Setting Methods  //////////////////////////////
@@ -49,21 +42,20 @@ public class Exercise {
     public String getMuscleGroup() {return muscle_group;}
     public String getBodyPart() {return body_part;}
     public String getExerciseDirection() {return exercise_direction;}
+
+    public String getEquipment() { return exercise_equipment; }
+    public String getDifficulty() { return exercise_difficulty; }
+
+
     public String getExerciseEquipment() { return exercise_equipment; }
     public String getExerciseDifficulty() { return exercise_difficulty; }
+    public String getExerciseDescription() { return exercise_description; }
+
 
     public int getRepetitions() { return repetitions; }
     public int getSets() { return sets; }
     ///////////////////////////////////////////////////
 
-
-
-    // Static getter methods for static variables
-    public static String[] getDirectionOfExercise() {return DirectionOfExercise;}
-    public static String[] getMannerOfExercise() {return Equipment;}
-    public static String[] getMuscleRegions() {return MuscleRegions;}
-    public static String[] getMuscleGroups() {return MuscleGroups;}
-    /////////////////////////////////////////////////
 
     // Method to display all non-static variables
     public void displayInfo() {
@@ -77,5 +69,10 @@ public class Exercise {
     public void displayInLine() {
         System.out.println(sets + "x" + repetitions + " - " +exercise_name + ": " + muscle_group + " - " + body_part + " - " + exercise_direction
                 + " - " +exercise_equipment + " - " + exercise_difficulty);
+    }
+
+    public String displayDescription() {
+        return exercise_name + ":\n" + exercise_description;
+        //System.out.println(exercise_description);
     }
 }

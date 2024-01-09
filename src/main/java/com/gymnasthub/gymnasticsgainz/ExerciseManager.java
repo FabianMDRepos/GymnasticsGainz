@@ -26,13 +26,17 @@ public class ExerciseManager {
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(delimiter);
 
-                this.addExercise( new Exercise(data[0], data[1], data[2], data[3], data[4], data[5]) );
+                this.addExercise( new Exercise(data[0], data[1], data[2], data[3], data[4], data[5],data[6]) );
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public ExerciseManager(){}
+    public ExerciseManager(){
+        String csvFile = "src\\main\\java\\com\\gymnasthub\\gymnasticsgainz\\Exercise_test_list.csv";
+        String csvSplitBy = ",";
+        new ExerciseManager(csvFile, csvSplitBy);
+    }
 
 
 
@@ -47,7 +51,7 @@ public class ExerciseManager {
     }
 
 
-    public static List<Exercise> getExercisesByName(String name) {
+    public static List<Exercise> getExercisesByName(String name) { //TODO eventually modify to search for presence instead of match
         return Optional.ofNullable(exercisesByName.get(name)).map(Collections::singletonList).orElse(Collections.emptyList());
     }
     public static List<Exercise> getExercisesByName(List<Exercise> exercises, String name) {
@@ -124,6 +128,9 @@ public class ExerciseManager {
                 .collect(Collectors.toList());
     }
 
+    //TODO add method to get exercise by body part
+    //TODO add method to get exercise by equipment
+    //TODO add method to get exercise by difficulty
 
 
     public static void displayAllExercisesInfo() {
@@ -137,10 +144,5 @@ public class ExerciseManager {
             System.out.println();
         }
     }
-
-    // TODO add method that passes in lists of exercises and searches those for parameters
-    // TODO Refactor code so that getting methods follow this format.
-    // Method to filter exercises by movement direction from a list of exercises
-
 
 }

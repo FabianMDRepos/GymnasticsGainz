@@ -32,44 +32,57 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="553.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gymnasthub.gymnasticsgainz.GainsGuiController">
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gymnasthub.gymnasticsgainz.GainsGuiController">
     <children>
-        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="553.0" prefWidth="807.0" VBox.vgrow="ALWAYS">
-            <children>
-                <ChoiceBox fx:id="difficultyChoiceBox" layoutX="350.0" layoutY="80.0" prefHeight="25.0" prefWidth="105.0" />
-                <Button fx:id="generateButton" layoutX="362.0" layoutY="483.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="82.0" text="Generate">
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+                <Label fx:id="difficulty_label" layoutX="467.0" layoutY="32.0" prefHeight="17.0" prefWidth="130.0" text="Workout Difficulty (1-4)" />
+                <ChoiceBox fx:id="difficultyChoiceBox" layoutX="480.0" layoutY="49.0" prefHeight="25.0" prefWidth="105.0" />
+                <Button fx:id="generateButton" layoutX="491.0" layoutY="94.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="82.0" text="Generate">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
-                <Label layoutX="308.0" layoutY="14.0" prefHeight="49.0" prefWidth="194.0" text="Generate Workout">
+                <Label layoutX="35.0" layoutY="5.0" prefHeight="70.0" prefWidth="384.0" text="GymnastGains Workout Generator">
                     <font>
                         <Font name="System Bold" size="22.0" />
                     </font>
                 </Label>
-                <Label layoutX="337.0" layoutY="63.0" prefHeight="17.0" prefWidth="130.0" text="Workout Difficulty (1-4)" />
-                <TableView fx:id="exerciseTable" layoutX="16.0" layoutY="128.0" prefHeight="345.0" prefWidth="778.0">
-                    <columns>
-                        <TableColumn fx:id="nameColumn" prefWidth="129.0" text="Name" />
-                        <TableColumn fx:id="muscleGroupColumn" prefWidth="90.0" text="Muscle Group" />
-                        <TableColumn fx:id="bodyPartColumn" prefWidth="92.0" text="Body Part" />
-                        <TableColumn fx:id="directionColumn" prefWidth="96.0" text="Direction" />
-                        <TableColumn fx:id="equipmentColumn" prefWidth="98.0" text="Equipment" />
-                        <TableColumn fx:id="difficultyColumn" prefWidth="97.0" text="Difficulty" />
-                        <TableColumn fx:id="setsColumn" prefWidth="89.0" text="Sets" />
-                        <TableColumn fx:id="repsColumn" prefWidth="86.0" text="Reps" />
-                    </columns>
-                </TableView>
-            </children>
-        </AnchorPane>
+            <TextArea fx:id="description" editable="false" layoutX="646.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="501.0" promptText="Select an exercise" wrapText="true">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="35.0" layoutY="63.0" prefHeight="25.0" prefWidth="171.0" text=" 1.) Select &quot;Workout Difficulty&quot;" />
+            <Label layoutX="35.0" layoutY="88.0" prefHeight="25.0" prefWidth="171.0" text=" 2.) Press &quot;Generate&quot;" />
+            <Label layoutX="35.0" layoutY="114.0" prefHeight="17.0" prefWidth="237.0" text=" 3.) Click an exercise to get its description" />
+         </children>
+      </Pane>
+          <TableView fx:id="exerciseTable" prefHeight="377.0" prefWidth="1180.0" VBox.vgrow="ALWAYS">
+              <columns>
+                  <TableColumn fx:id="nameColumn" editable="false" maxWidth="351.0" minWidth="-Infinity" prefWidth="351.0" resizable="false" text="Name" />
+                  <TableColumn fx:id="muscleGroupColumn" editable="false" maxWidth="145.0" minWidth="-Infinity" prefWidth="145.0" resizable="false" text="Muscle Group" />
+                  <TableColumn fx:id="bodyPartColumn" editable="false" maxWidth="117.0" minWidth="-Infinity" prefWidth="117.0" resizable="false" text="Body Part" />
+                  <TableColumn fx:id="directionColumn" editable="false" maxWidth="123.0" minWidth="-Infinity" prefWidth="123.0" resizable="false" text="Direction" />
+                  <TableColumn fx:id="equipmentColumn" editable="false" maxWidth="124.0" minWidth="-Infinity" prefWidth="124.0" resizable="false" text="Equipment" />
+                  <TableColumn fx:id="difficultyColumn" maxWidth="108.0" minWidth="-Infinity" prefWidth="108.0" resizable="false" text="Difficulty" />
+                  <TableColumn fx:id="setsColumn" editable="false" maxWidth="99.0" minWidth="-Infinity" prefWidth="86.0" resizable="false" text="Sets" />
+                  <TableColumn fx:id="repsColumn" editable="false" maxWidth="95.0" minWidth="-Infinity" prefWidth="95.0" resizable="false" text="Reps" />
+              </columns>
+          </TableView>
     </children>
 </VBox>
