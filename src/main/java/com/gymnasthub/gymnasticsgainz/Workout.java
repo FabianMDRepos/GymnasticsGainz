@@ -27,8 +27,10 @@ public class Workout {
     private static String[] WorkoutDifficulties = {"Build-up", "Deload", "Maintain", "Peak"};
 
     public Workout() { //TODO add logic so creating a workout object auto generates the workout exercises.
+
     }
 
+    // TODO Generate workouts if empty
     public List<Exercise> getGeneratedExercises() {
         return generated_exercises;
     }
@@ -66,13 +68,13 @@ public class Workout {
         int reps;
         boolean is_timed = (e.getExerciseDirection().equals("Timed"));
 
-        reps = switch (e.getEquipment()) {
-            case "Barbell" -> calculateIntermediateReps(5, 10, e.getDifficulty());
-            case "Dumbbell" -> is_timed ? calculateIntermediateReps(5, 10, e.getDifficulty()) : calculateIntermediateReps(10, 15, e.getDifficulty());
-            case "Cable" -> calculateIntermediateReps(10, 15, e.getDifficulty());
-            case "Bodyweight" -> is_timed ? calculateIntermediateReps(30, 60, e.getDifficulty()) : calculateIntermediateReps(10, 20, e.getDifficulty());
-            case "Banded" -> calculateIntermediateReps(15, 20, e.getDifficulty());
-            default -> calculateIntermediateReps(10, 20, e.getDifficulty());
+        reps = switch (e.getExerciseEquipment()) {
+            case "Barbell" -> calculateIntermediateReps(5, 10, e.getExerciseDifficulty());
+            case "Dumbbell" -> is_timed ? calculateIntermediateReps(5, 10, e.getExerciseDifficulty()) : calculateIntermediateReps(10, 15, e.getExerciseDifficulty());
+            case "Cable" -> calculateIntermediateReps(10, 15, e.getExerciseDifficulty());
+            case "Bodyweight" -> is_timed ? calculateIntermediateReps(30, 60, e.getExerciseDifficulty()) : calculateIntermediateReps(10, 20, e.getExerciseDifficulty());
+            case "Banded" -> calculateIntermediateReps(15, 20, e.getExerciseDifficulty());
+            default -> calculateIntermediateReps(10, 20, e.getExerciseDifficulty());
         };
 
         e.setRepetitions(reps);

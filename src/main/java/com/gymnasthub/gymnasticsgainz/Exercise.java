@@ -46,6 +46,7 @@ public class Exercise {
     public String getEquipment() { return exercise_equipment; }
     public String getDifficulty() { return exercise_difficulty; }
 
+
     public String getExerciseEquipment() { return exercise_equipment; }
     public String getExerciseDifficulty() { return exercise_difficulty; }
     public String getExerciseDescription() { return exercise_description; }

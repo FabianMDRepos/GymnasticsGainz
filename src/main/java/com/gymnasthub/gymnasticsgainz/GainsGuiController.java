@@ -41,6 +41,7 @@ public class GainsGuiController {
     @FXML
     private TableColumn<Exercise, Integer> repsColumn;
 
+
     @FXML
     public void initialize() {
         // Initialize ExerciseManager
@@ -63,12 +64,14 @@ public class GainsGuiController {
         //difficultyChoiceBox.set TODO create handler to change label back to black when option is selected
         //exerciseTable.setOnMouseClicked();
         initializeTableFactory();
+
     }
 
     @FXML
     private void handleGenerateAction(ActionEvent event) {
         // Handle generate button click
         String selectedDifficulty = difficultyChoiceBox.getValue();
+
         difficulty_label.setTextFill(selectedDifficulty != null ? Color.BLACK : Color.RED);
         if (selectedDifficulty != null) {
             description.clear();
@@ -78,6 +81,7 @@ public class GainsGuiController {
             exerciseTable.setItems(generatedExercises);
         }
     }
+
 
     private void initializeTableFactory() {
         exerciseTable.setRowFactory(tv -> {
