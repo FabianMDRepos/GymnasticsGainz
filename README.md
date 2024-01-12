@@ -1,6 +1,6 @@
 # GymnasticsGainz
 
-GymnasticsGainz is a Java-based workout planning application that helps users create exercise routines tailored to their fitness goals. Whether you're looking to build muscle, maintain your current physique, or peak for a competition, GymnasticsGainz has you covered.
+GymnasticsGainz is a Java-based workout planning application that helps coaches create conditioning routines tailored to their season goals. Whether you're looking to build muscle, maintain your current physique, or peak for a competition, GymnasticsGainz has you covered.
 
 ![GymnasticsGainz Screenshot](screenshot.png)
 
@@ -33,28 +33,26 @@ Before you begin, ensure you have met the following requirements:
 
 ### Installation
 
-1. Clone the repository to your local machine (or download the ZIP file):
+1.) Clone the repository to your local machine (or download the ZIP file):
+ 
+      git clone https://github.com/yourusername/GymnasticsGainz.git
+   
+2.) Navigate to the project directory:
 
-   ```bash
-   git clone https://github.com/yourusername/GymnasticsGainz.git
-Navigate to the project directory:
+      cd GymnasticsGainz
 
-   ```bash
-   cd GymnasticsGainz
+3.) Compile and run the application:
 
-Compile and run the application:
-
-   '''bash
-   ./gradlew run
+      ./gradlew run
 
 ## Usage
-1.) Launch the GymnasticsGainz application.
+1.)  Launch the GymnasticsGainz application.
 
-2.) Select your desired difficulty level: Deload, Maintain, Build-up, or Peak.
+2.)  Select your desired difficulty level: Deload, Maintain, Build-up, or Peak.
 
-3.) Click the "Generate Workout" button to create a workout routine.
+3.)  Click the "Generate Workout" button to create a workout routine.
 
-4.) View the generated exercises in the table, and click on an exercise to see its details.
+4.)  View the generated exercises in the table, and click on an exercise to see its details.
 
 Customize the exercise database as needed.
 
@@ -69,34 +67,29 @@ Contributions are welcome! If you'd like to contribute to GymnasticsGainz, pleas
 
 Fork the repository.
 
-Create a new branch for your feature or bug fix:
+1.) Create a new branch for your feature or bug fix:
 
-'''bash
-git checkout -b feature/your-feature-name
+      git checkout -b feature/your-feature-name
 
-or
+   or
 
-'''bash
-git checkout -b bugfix/your-bug-fix-name
+      git checkout -b bugfix/your-bug-fix-name
 
-Make your changes and commit them:
+2.) Make your changes and commit them:
 
-'''bash
-git commit -m "Your commit message here"
+      git commit -m "Your commit message here"
 
-Push your changes to your forked repository:
+3.) Push your changes to your forked repository:
 
-'''bash
-git push origin feature/your-feature-name
+      git push origin feature/your-feature-name
 
-or
+   or
 
-'''bash
-git push origin bugfix/your-bug-fix-name
+      git push origin bugfix/your-bug-fix-name
 
-Open a pull request (PR) to the original repository, explaining the changes you've made.
+4.) Open a pull request (PR) to the original repository, explaining the changes you've made.
 
-Your PR will be reviewed, and once approved, your changes will be merged.
+5.) Your PR will be reviewed, and once approved, your changes will be merged.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## License
+This project is currently unlicensed 
