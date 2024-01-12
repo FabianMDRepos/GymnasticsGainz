@@ -39,32 +39,30 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/yourusername/GymnasticsGainz.git
 Navigate to the project directory:
 
-bash
-Copy code
-cd GymnasticsGainz
+   ```bash
+   cd GymnasticsGainz
+
 Compile and run the application:
 
-bash
-Copy code
-./gradlew run
-Usage
-Launch the GymnasticsGainz application.
+   '''bash
+   ./gradlew run
 
-Select your desired difficulty level: Deload, Maintain, Build-up, or Peak.
+## Usage
+1.) Launch the GymnasticsGainz application.
 
-Click the "Generate Workout" button to create a workout routine.
+2.) Select your desired difficulty level: Deload, Maintain, Build-up, or Peak.
 
-View the generated exercises in the table, and click on an exercise to see its details.
+3.) Click the "Generate Workout" button to create a workout routine.
+
+4.) View the generated exercises in the table, and click on an exercise to see its details.
 
 Customize the exercise database as needed.
 
-Customizing Exercise Database
+### Customizing Exercise Database
 You can customize the exercise database by editing the CSV file located in the src/main/java/com/gymnasthub/gymnasticsgainz directory. Add, modify, or remove exercises as necessary.
 
 The CSV file follows this format:
 
-css
-Copy code
 Exercise Name, Muscle Group, Body Part, Exercise Direction, Exercise Equipment, Exercise Difficulty, Sets, Repetitions
 Contributing
 Contributions are welcome! If you'd like to contribute to GymnasticsGainz, please follow these steps:
@@ -73,29 +71,29 @@ Fork the repository.
 
 Create a new branch for your feature or bug fix:
 
-bash
-Copy code
+'''bash
 git checkout -b feature/your-feature-name
+
 or
 
-bash
-Copy code
+'''bash
 git checkout -b bugfix/your-bug-fix-name
+
 Make your changes and commit them:
 
-bash
-Copy code
+'''bash
 git commit -m "Your commit message here"
+
 Push your changes to your forked repository:
 
-bash
-Copy code
+'''bash
 git push origin feature/your-feature-name
+
 or
 
-bash
-Copy code
+'''bash
 git push origin bugfix/your-bug-fix-name
+
 Open a pull request (PR) to the original repository, explaining the changes you've made.
 
 Your PR will be reviewed, and once approved, your changes will be merged.
