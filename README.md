@@ -1,8 +1,20 @@
+<a href="GymnasticsGainz"><img src="src/main/resources/Images/img2.png" align="right" height="250" width="250" ></a>
 # GymnasticsGainz
 
-GymnasticsGainz is a Java-based workout planning application that helps coaches create conditioning routines tailored to their season goals. Whether you're looking to build muscle, maintain your current physique, or peak for a competition, GymnasticsGainz has you covered.
+GymnasticsGainz is a Java-based desktop workout generating application that helps coaches create conditioning routines tailored to their season goals. Whether you're looking to build strength, maintain your current performance, or peak for a competition, GymnasticsGainz has you covered. 
+GymnasticsGainz aims to provide an automated solution to take the monotony out of handwriting conditioning plans each day, and adding variety for athletes.
 
-![GymnasticsGainz Screenshot](screenshot.png)
+The generator picks 10 exercises per workout using the following criteria:
+
+ * 2 upper body pushing exercises,
+ * 2 upper body pulling exercises,
+ * 1 lower body pushing exercises,
+ * 1 lower body pulling exercises,
+ * 3 core exercises.
+   
+The project utilizes a simple and easy to use JavaFX UI and is deployed using Gradle. Currently the exercise data set is limited to a test set generated using AI. However, future work will aim to incorporate a proper exercise data set.  Additional work will also give users the ability to view, and select alternate exercises, as well as adding criteria for determining generated exercise selection.  
+
+
 
 ## Table of Contents
 
@@ -54,26 +66,25 @@ Before you begin, ensure you have met the following requirements:
 
 4.)  View the generated exercises in the table, and click on an exercise to see its details.
 
-Customize the exercise database as needed.
 
-### Customizing Exercise Database
+
+## Customizing Exercise Database
 You can customize the exercise database by editing the CSV file located in the src/main/java/com/gymnasthub/gymnasticsgainz directory. Add, modify, or remove exercises as necessary.
 
 The CSV file follows this format:
 
 Exercise Name, Muscle Group, Body Part, Exercise Direction, Exercise Equipment, Exercise Difficulty, Sets, Repetitions
-Contributing
-Contributions are welcome! If you'd like to contribute to GymnasticsGainz, please follow these steps:
 
-Fork the repository.
+## Contributing
+Contributions are welcome! If you'd like to contribute to GymnasticsGainz by adding exercises, features or bug fixes, please follow these steps:
 
-1.) Create a new branch for your feature or bug fix:
 
-      git checkout -b feature/your-feature-name
+ #### Fork the repository:
 
-   or
+1.) Create a new branch for your changes:
 
-      git checkout -b bugfix/your-bug-fix-name
+      git checkout -b feature/your-change-name
+
 
 2.) Make your changes and commit them:
 
@@ -81,15 +92,12 @@ Fork the repository.
 
 3.) Push your changes to your forked repository:
 
-      git push origin feature/your-feature-name
+      git push origin feature/your-change-name
 
-   or
 
-      git push origin bugfix/your-bug-fix-name
+4.) Open a pull request to the original repository, explaining the changes you've made.
 
-4.) Open a pull request (PR) to the original repository, explaining the changes you've made.
-
-5.) Your PR will be reviewed, and once approved, your changes will be merged.
+5.) Your pull request will be reviewed, and if approved, your changes will be merged.
 
 ## License
 This project is currently unlicensed 
