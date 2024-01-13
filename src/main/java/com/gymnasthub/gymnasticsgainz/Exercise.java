@@ -6,7 +6,7 @@ public class Exercise {
 
     // Set by constructor /////////////////////
     public Exercise(String name, String group, String part, String direction,String equipment,
-                    String difficulty, String description) { //TODO Modify naming conventions
+                    String difficulty, String description) {
         exercise_name = name;
         muscle_group = group;
         body_part = part;

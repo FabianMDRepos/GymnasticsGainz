@@ -1,0 +1,70 @@
+/* styles the  scene */
+#scene {
+    -fx-background-color: #f2f2f2;
+}
+
+/* styles the title label */
+.label-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* styles the difficulty label */
+.label-difficulty {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+}
+
+/* styles the choice box */
+.choice-box {
+    -fx-font-size: 14px;
+    -fx-pref-width: 105px;
+    -fx-background-color: #ffffff;
+}
+
+/* styles the generate button */
+.button {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #0362fc;
+}
+
+.button:hover {
+    -fx-background-color: #0000ff;
+}
+
+/* styles the description text area */
+.text-area {
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-prompt-text-fill: #999999;
+    -fx-text-fill: #333333;
+}
+
+/* styles the table view */
+.table-view {
+    -fx-pref-width: 1000px;
+    -fx-pref-height: 377px;
+    -fx-background-color: #ffffff;
+}
+
+/* styles the table columns */
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-border-color: #dddddd;
+}
+
+/* styles the table rows */
+.table-row-cell:odd {
+    -fx-background-color: #f2f2f2;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #ccf5ff;
+    -fx-text-fill: #ffffff;
+}
