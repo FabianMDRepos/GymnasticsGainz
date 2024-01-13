@@ -60,13 +60,19 @@ Before you begin, ensure you have met the following requirements:
 ## Usage
 1.)  Launch the GymnasticsGainz application.
 
+   See [Installation](#Installation)
+
 2.)  Select your desired difficulty level: Deload, Maintain, Build-up, or Peak.
+
+<a href="SelectDificulty"><img src="src/main/resources/Images/SelectDifficulty.png"  height="293" width="572" ></a>
 
 3.)  Click the "Generate Workout" button to create a workout routine.
 
+<a href="GenerateWorkout"><img src="src/main/resources/Images/GenerateWorkout.png"  height="293" width="572" ></a>
+
 4.)  View the generated exercises in the table, and click on an exercise to see its details.
 
-
+<a href="ExerciseDescription"><img src="src/main/resources/Images/ExerciseDescription.png"  height="293" width="572" ></a>
 
 ## Customizing Exercise Database
 You can customize the exercise database by editing the CSV file located in the src/main/java/com/gymnasthub/gymnasticsgainz directory. Add, modify, or remove exercises as necessary.
